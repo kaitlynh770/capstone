@@ -1,0 +1,26 @@
+h1{
+    color: white;
+}
+.white-text{
+    color:white;
+    font-family: 'Recoleta', cursive;
+}
+.bg-light {
+    --bs-bg-opacity: 1;
+    /* background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important; */
+    background-color: white;
+}
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: black;
+    text-decoration: none;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.menu-item{
+    font-family: 'Basis Grotesque Arabic Pro Medium', cursive;
+    font: 1.2em;
+    color: black;
+}

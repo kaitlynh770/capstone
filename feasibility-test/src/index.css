@@ -6,6 +6,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@font-face {
+  font-family: 'Recoleta Bold';
+  src: local('recoleta'), url(./fonts/recoleta-font/Recoleta-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Recoleta Black';
+  src: local('recoleta'), url(./fonts/recoleta-font/Recoleta-Black.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Basis Grotesque Arabic Pro Medium';
+  src: local('basis grotesque arabic pro'), url(./fonts/Basis\ Grotesque\ PRO\ Font\ Family/BasisGrotesqueArabicPro-Medium.ttf) format('truetype');
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
