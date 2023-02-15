@@ -5,13 +5,13 @@ import Navigation from './Navigation.js';
 function Home(){
     const [width, setWidth] = useState(1000);
     const [height, setHeight] = useState(551);
-    const [cx, setCx] = useState(566);
+    const [cx, setCx] = useState(550);
     const [cy, setCy] = useState(300); //moves it down
-    const [rx, setRx] = useState(377);
-    const [ry, setRy] = useState(90); //changes how bent it is
+    const [rx, setRx] = useState(320);
+    const [ry, setRy] = useState(140); //changes how bent it is
     const [startOffset, setStartOffset] = useState(10);
     const [reversed, setReversed] = useState(true);
-    const [text, setText] = useState("P l a s t i f a s h i o n");
+    const [text, setText] = useState("Pl a s t i f a s h i o n");
     const [fontSize, setFontSize] = useState(80);
     const [kerning, setKerning] = useState()
     const font = "Recoleta Bold";
