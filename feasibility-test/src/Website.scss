@@ -1,14 +1,48 @@
 h1{
     color: white;
 }
+.navbar-white navbar navbar-expand-lg navbar-light bg-light{
+    --bs-bg-opacity: 1;
+    background-color: white;
+}
 .white-text{
     color:white;
     font-family: 'Recoleta', cursive;
 }
-.bg-light {
-    --bs-bg-opacity: 1;
-    /* background-color: rgba(var(--bs-light-rgb),var(--bs-bg-opacity))!important; */
-    background-color: white;
+.overlap-short-term{
+    margin-top: -700px;
+    margin-right: 156px;
+}
+.center-icon{
+    position: relative;
+    top: -85px;
+}
+.right{
+    float:right;
+    margin-top: 100px;
+    margin-left: -200px;
+    margin-right: 5vw;
+}
+.left{
+    float: left;
+    margin-top: 100px;
+    margin-right: -200px;
+    margin-left: 5vw;
+}
+.icon-size{
+    height:8vw;
+}
+.left-lower{
+    float: left;
+    margin-top: 200px;
+    margin-left: 20vw;
+    margin-right: -200px;
+}
+.right-lower{
+    float: right;
+    margin-top: -180px;
+    margin-right: 20vw;
+    margin-left: -200px;
 }
 .nav-link {
     display: block;
