@@ -4,6 +4,7 @@ import Home from "./Home.js";
 import Story from './Story.js';
 import Navigation from './Navigation.js';
 import Process from './Process.js';
+import Reasons from './Reasons.js';
 import headerPic from './img/tulips.png';
 function Content(){
     const [showHome, setHomeState] = useState(true);
@@ -14,8 +15,9 @@ function Content(){
         <div>
             <Navigation/>
             {/* {showHome && <Home/>} */}
-            {/* <Story /> */}
-            <Process />
+            <Story />
+            {/* <Process /> */}
+            {/* <Reasons /> */}
         </div>
     );
 }
