@@ -34,29 +34,28 @@ function Home(){
       : null;
     return(
         <div>
-            <Navigation />
-                <ReactCurvedText
-                    width={width}
-                    height={height}
-                    cx={cx}
-                    cy={cy}
-                    rx={rx}
-                    ry={ry}
-                    startOffset={startOffset}
-                    reversed={reversed}
-                    text={text}
-                    textProps={textProps}
-                    textPathProps={{"fill": "white"}}
-                    tspanProps={tspanProps}
-                    ellipseProps={ellipseProps}
-                    svgProps={svgProps}
-                />
-                <img src = {dress} className='overlap-short-term'/>
-                <img src = {fashionIcon} className='left icon-size' />
-                <img src = {threadIcon} className='right icon-size' />
-                <img src = {teamworkIcon} className = 'left-lower icon-size' />
-                <img src = {processIcon} className = 'right-lower icon-size' />
-                <img src = {environmentIcon} className = 'center-icon icon-size' />
+            <ReactCurvedText
+                width={width}
+                height={height}
+                cx={cx}
+                cy={cy}
+                rx={rx}
+                ry={ry}
+                startOffset={startOffset}
+                reversed={reversed}
+                text={text}
+                textProps={textProps}
+                textPathProps={{"fill": "white"}}
+                tspanProps={tspanProps}
+                ellipseProps={ellipseProps}
+                svgProps={svgProps}
+            />
+            <img src = {dress} className='overlap-short-term'/>
+            <img src = {fashionIcon} className='left icon-size' />
+            <img src = {threadIcon} className='right icon-size' />
+            <img src = {teamworkIcon} className = 'left-lower icon-size' />
+            <img src = {processIcon} className = 'right-lower icon-size' />
+            <img src = {environmentIcon} className = 'center-icon icon-size' />
         </div>
     );
 }
