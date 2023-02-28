@@ -5,19 +5,18 @@ import Story from './Story.js';
 import Navigation from './Navigation.js';
 import Process from './Process.js';
 import Reasons from './Reasons.js';
-import headerPic from './img/tulips.png';
-function Content(){
-    const [showHome, setHomeState] = useState(true);
-    const [showAboutPage, setShowAboutPage] = useState(false);
-    const[showStoryPage, setShowStoryPage] = useState(false);
-    console.log(showAboutPage);
+const Content = () => {
+    const [homeState, setHomeState] = useState(true);
+    const [processState, setProcessState] = useState(false);
+    const[storyState, setStoryState] = useState(false);
+    const [reasonsState, setReasonsState] = useState(false);
     return(
         <div>
-            <Navigation/>
-            {/* {showHome && <Home/>} */}
-            <Story />
-            {/* <Process /> */}
-            {/* <Reasons /> */}
+            <Navigation setHomeState = {setHomeState} homeState = {homeState} setProcessState = {setProcessState} processState = {processState} setStoryState = {setStoryState} storyState = {storyState} setReasonsState ={setReasonsState} reasonsState = {reasonsState}/>
+            {homeState && <Home/>}
+            {storyState && <Story />}
+            {reasonsState && <Reasons/>}
+            {processState && <Process />}
         </div>
     );
 }
