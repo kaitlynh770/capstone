@@ -35,6 +35,7 @@ const Navigation =  ({setHomeState, homeState, setProcessState, processState, se
   }
     return(
       <div className = 'top-bar'>
+        <NavBarItem text = "Home" active = {homeState} onClick = {clickHome} />
         <NavBarItem text = "Our Story" active = {storyState} onClick = {clickStory} />
         <NavBarItem text = "Process" active = {processState} onClick = {clickProcess} />
         <NavBarItem text = "Why us" active = {reasonsState} onClick = {clickReasons} />
