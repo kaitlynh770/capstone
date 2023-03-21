@@ -11,10 +11,16 @@ import teamworkIcon from './img/teamwork-icon.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { gsap } from "gsap";
-import Tippy from "@tippy.js/react";
+import Tippy from '@tippyjs/react';
 import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
+import 'tippy.js/animations/scale.css';
 function Home(){
+    const highFashionText = "A chic garment that is not only stylish and sustainable but also a feat of engineering.";
+    const teamWorkText = "With a passion for the environment and fashion, we strived to use each of our unique skill sets to create a garment never before seen.";
+    const materialText = "Our garment is composed entirely of recycled plastic cups. 100% man-made and environmentally friendly.";
+    const processText = "Our team members have worked tirelessly to develop our garment and website in tandem with each other."
+    const environmentText = " Finding another use for plastic cups, Plastifashion breathes second life into this harmful material to turn it into something that can be worn sustainably.";
     const [width, setWidth] = useState(1000);
     const [height, setHeight] = useState(551);
     const [cx, setCx] = useState(550);
@@ -68,11 +74,36 @@ function Home(){
                 />
             </div>
             <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "600" src = {dress} className='overlap-short-term garment-size'/>
-            <img data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "800" src = {fashionIcon} className='left icon-size' />
-            <img data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2800" src = {threadIcon} className='right icon-size' />
-            <img data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1300" src = {teamworkIcon} className = 'left-lower icon-size' />
-            <img data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2300" src = {processIcon} className = 'right-lower icon-size' />
-            <img data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1800"src = {environmentIcon} className = 'center-icon icon-size' />
+            <Tippy theme = {"light"} content = {highFashionText} animation = {"scale"} maxWidth={300}>
+                <div className='left' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "800">
+                    <img src = {fashionIcon} className='icon-size' />
+                    <p className='icon-caption'>High Fashion</p>
+                </div>
+            </Tippy>
+                <div className='right' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2800">
+                    <Tippy theme = {"light"} content = {materialText} animation = {"scale"} maxWidth={300}>
+                        <img src = {threadIcon} className='icon-size' />
+                    </Tippy>
+                    <p className='icon-caption'>Material</p>
+                </div>
+                <div className='left-lower' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1300">
+                    <Tippy theme = {"light"} content = {teamWorkText} animation = {"scale"} maxWidth = {300}>
+                        <img src = {teamworkIcon} className = 'icon-size' />
+                    </Tippy>
+                    <p className='icon-caption'>Team</p>
+                </div>
+                <div className='right-lower' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2300">
+                    <Tippy interactive= {true} theme = {"light"} content = {processText} animation = {"scale"} maxWidth = {300}>
+                        <img src = {processIcon} className = 'icon-size' />
+                    </Tippy>
+                    <p className='icon-caption'>Process</p>
+                </div>
+                <div className = 'center-icon' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1800">
+                    <Tippy theme = {"light"} content = {environmentText} animation = {"scale"} maxWidth = {300}>
+                        <img src = {environmentIcon} className = 'icon-size' />
+                    </Tippy>
+                    <p className='icon-caption'>Environment</p>
+                </div>
         </div>
     );
 }

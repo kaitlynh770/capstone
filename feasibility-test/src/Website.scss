@@ -14,22 +14,23 @@ h1{
     font-family: 'Recoleta', cursive;
 }
 .garment-size{
-    width: 70%;
+    width: 65%;
+    height: 800px;
 }
 .overlap-short-term{
-    margin-top: -700px;
+    margin-top: -680px;
     //margin-right: 150px;
-    //margin-left: 8vw;
-    margin-right: 12vw;
+    // margin-left: 7vw;
+    // margin-left: 4.2vw;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .center-icon{
-    //display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -360px;
+    // display: block;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: -50px;
 }
 .right{
     float:right;
@@ -51,20 +52,26 @@ h1{
 .icons{
     margin-top: -20px;
 }
+.icon-caption{
+    color:white;
+    font-family: 'Recoleta Bold', cursive;
+    font-size: 1vw;
+}
 .icon-size{
     height:6vw;
 }
 .left-lower{
     float: left;
-    margin-top: 70px;
+    // margin-top: 40px;
+    margin-top: 40px;
     margin-left: 20vw;
     margin-right: -200px;
 }
 .right-lower{
     float: right;
-    margin-top: -240px;
     margin-right: 20vw;
-    margin-left: -200px;
+    margin-left: -180px;
+    margin-top: 40px;
 }
 .left-half{
     margin: 4%;
