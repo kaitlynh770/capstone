@@ -106,7 +106,7 @@ h1{
 .left-half-process{
     margin: 2%;
     width: 46%;
-    padding: 3%;
+    padding: 2%;
     box-sizing: border-box;
     text-align: left;
     float: left;
@@ -165,7 +165,16 @@ h1{
     color: white;
 }
 .carousel-image{
-    width: 60%;
+    width: 80%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    margin-top: 25vw;
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
 }
 .process-paragraph{
     position: absolute;
