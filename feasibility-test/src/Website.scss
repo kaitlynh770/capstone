@@ -64,12 +64,12 @@ h1{
     float: left;
     // margin-top: 40px;
     margin-top: 40px;
-    margin-left: 20vw;
+    margin-left: 25vw;
     margin-right: -200px;
 }
 .right-lower{
     float: right;
-    margin-right: 20vw;
+    margin-right: 23vw;
     margin-left: -180px;
     margin-top: 40px;
 }
@@ -80,7 +80,15 @@ h1{
     box-sizing: border-box;
     text-align: left;
 }
-.left-half-process{
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    //justify-content: center;
+}
+.center-process{
     margin: 2%;
     width: 46%;
     padding: 3%;
@@ -96,13 +104,9 @@ h1{
     float: right;
 }
 .fashion-pic {
-	margin:2%;
-	width:46%;
-	padding:2%;
-    padding-left: 10vw;
     box-sizing:border-box;
-    float:right;
     text-align: center;
+    margin: auto;
 }
 .fashion-pic-left{
     margin:2%;
@@ -113,8 +117,15 @@ h1{
     float:left;
     text-align: center;
 }
+.process-step{
+    display: inline-block;
+}
 .pic-adjustments{
-    width: 90%;
+    width: 30%;
+    margin-top: 1vw;
+}
+.pic-adjustments-story{
+    width: 70%;
 }
 .left-float-heading{
     font-family: 'Recoleta';
@@ -149,9 +160,21 @@ h1{
     width: 60%;
 }
 .process-paragraph{
+    position: absolute;
+    align-self: flex-start;
     font-family: 'Basis Grotesque Arabic Pro Medium', cursive;
-    font-size: 1vw;
+    font-size: 1.1vw;
     color: white;
+    width: 50%;
+    margin-top: 5vw;
+}
+.left-align{
+    float: left;
+    text-align: left;
+}
+.right-align{
+    float: right;
+    text-align:right;
 }
 .process-page{
     text-align: center;
@@ -161,6 +184,7 @@ h1{
 .header-pic{
     // background-size: cover;
     width: 90%;
+    height: 20%;
     padding-top: 1vw;
     overflow-x: hidden;
 }

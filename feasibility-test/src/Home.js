@@ -1,7 +1,6 @@
 import './Website.scss';
 import ReactCurvedText from "react-curved-text";
 import React, { useState, useEffect } from "react";
-import Navigation from './Navigation.js';
 import dress from './img/dress.png';
 import fashionIcon from './img/fashion-icon.png';
 import threadIcon from './img/thread-icon.png';
@@ -93,7 +92,7 @@ function Home(){
                     <p className='icon-caption'>Team</p>
                 </div>
                 <div className='right-lower' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2300">
-                    <Tippy interactive= {true} theme = {"light"} content = {processText} animation = {"scale"} maxWidth = {300}>
+                    <Tippy theme = {"light"} content = {processText} animation = {"scale"} maxWidth = {300}>
                         <img src = {processIcon} className = 'icon-size' />
                     </Tippy>
                     <p className='icon-caption'>Process</p>
