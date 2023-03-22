@@ -58,12 +58,6 @@ function Process(){
         showThirdParagraph(false);
         showFirstParagraph(false);
         showSecondParagraph(false);
-        // if(currentTarget.id = "1"){
-        // }
-        // if (currentTarget.id = "2"){
-        // }
-        // if(currentTarget.id = "3"){
-        // }
     };
     return(
         <div className = 'container'>
