@@ -2,8 +2,14 @@ h1{
     color: white;
 }
 .home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     overflow-x: hidden;
+    overflow-y: hidden;
     max-width: 100%;
+    justify-content: center;
+    position: relative;
 }
 .navbar-white navbar navbar-expand-lg navbar-light bg-light{
     --bs-bg-opacity: 1;
@@ -14,17 +20,11 @@ h1{
     font-family: 'Recoleta', cursive;
 }
 .garment-size{
-    width: 65%;
-    height: 800px;
+    width: 70%;
 }
 .overlap-short-term{
-    margin-top: -680px;
-    //margin-right: 150px;
-    // margin-left: 7vw;
-    // margin-left: 4.2vw;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    bottom: -50%;
 }
 .center-icon{
     // display: block;
@@ -32,11 +32,7 @@ h1{
     margin-right: 4vw;
     margin-top: -50px;
 }
-.right{
-    float:right;
-    margin-left: -200px;
-    margin-right: 5vw;
-}
+
 .container{
     display:flex; /*changes the container into a flex box*/
 	flex-wrap:wrap; /*wrap, nowrap, wrap-reverse*/
@@ -44,34 +40,51 @@ h1{
 	align-content:flex-start; /*flex-start, flex-end, center, stretch, space-between, space around*/
 	align-items:stretch; /*flex-end, center, stretch, baseline*/
 }
+.right{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    right: 5%;
+
+}
 .left{
-    float: left;
-    margin-right: -200px;
-    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5%;
+    align-self: flex-start;
+}
+.left-lower{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: stretch;
+}
+.right-lower{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: stretch;
+}
+.icon-group{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 .icons{
-    margin-top: -20px;
+    align-self: flex-start;
 }
 .icon-caption{
+    display: flex;
     color:white;
     font-family: 'Recoleta Bold', cursive;
     font-size: 1vw;
+    flex-direction: column;
 }
 .icon-size{
     height:6vw;
-}
-.left-lower{
-    float: left;
-    // margin-top: 40px;
-    margin-top: 40px;
-    margin-left: 25vw;
-    margin-right: -200px;
-}
-.right-lower{
-    float: right;
-    margin-right: 23vw;
-    margin-left: -180px;
-    margin-top: 40px;
 }
 .left-half{
     margin: 4%;

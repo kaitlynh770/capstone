@@ -20,6 +20,12 @@ function Home(){
     const materialText = "Our garment is composed entirely of recycled plastic cups. 100% man-made and environmentally friendly.";
     const processText = "Our team members have worked tirelessly to develop our garment and website in tandem with each other."
     const environmentText = " Finding another use for plastic cups, Plastifashion breathes second life into this harmful material to turn it into something that can be worn sustainably.";
+    const secondTier = {
+        marginTop: "2vw"
+    }
+    const thirdTier = {
+        marginTop: "4.5vw"
+    }
     const [width, setWidth] = useState(1000);
     const [height, setHeight] = useState(551);
     const [cx, setCx] = useState(550);
@@ -46,63 +52,61 @@ function Home(){
     useEffect(() => {
         AOS.init();
     }, [])
-    const onEnter = ({ currentTarget }) => {
-        gsap.to(currentTarget, {height: "7vw"});
-    };
-    const onLeave = ({ currentTarget }) => {
-        gsap.to(currentTarget, {height: "6vw"});
-    };
     return(
-        <div className = 'home'>
-            <div data-aos = "fade-down" data-aos-duration = "2000">
-                <ReactCurvedText
-                    width={width}
-                    height={height}
-                    cx={cx}
-                    cy={cy}
-                    rx={rx}
-                    ry={ry}
-                    startOffset={startOffset}
-                    reversed={reversed}
-                    text={text}
-                    textProps={textProps}
-                    textPathProps={{"fill": "white"}}
-                    tspanProps={tspanProps}
-                    ellipseProps={ellipseProps}
-                    svgProps={svgProps}
-                />
+        <div>
+            <div className = 'home'>
+                <div data-aos = "fade-down" data-aos-duration = "2000">
+                    <ReactCurvedText
+                        width={width}
+                        height={height}
+                        cx={cx}
+                        cy={cy}
+                        rx={rx}
+                        ry={ry}
+                        startOffset={startOffset}
+                        reversed={reversed}
+                        text={text}
+                        textProps={textProps}
+                        textPathProps={{"fill": "white"}}
+                        tspanProps={tspanProps}
+                        ellipseProps={ellipseProps}
+                        svgProps={svgProps}
+                        />          
+                </div>
+                <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "600" src = {dress} className='overlap-short-term garment-size'/>
             </div>
-            <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "600" src = {dress} className='overlap-short-term garment-size'/>
-            <Tippy theme = {"light"} content = {highFashionText} animation = {"scale"} maxWidth={300}>
-                <div className='left' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "800">
-                    <img src = {fashionIcon} className='icon-size' />
-                    <p className='icon-caption'>High Fashion</p>
-                </div>
-            </Tippy>
-                <div className='right' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2800">
-                    <Tippy theme = {"light"} content = {materialText} animation = {"scale"} maxWidth={300}>
+            <div className = 'icon-group'>
+                <Tippy theme = {"light"} content = {highFashionText} animation = {"scale"} maxWidth={300}>
+                    <div data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "800" className='left'>
+                        <img src = {fashionIcon} className='icon-size' />
+                        <p className='icon-caption'>High Fashion</p>
+                    </div>
+                </Tippy>
+                <Tippy theme = {"light"} content = {teamWorkText} animation = {"scale"} maxWidth={300}>
+                    <div data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1300" className = 'left-lower'>
+                        <img src = {teamworkIcon} className='icon-size' style = {secondTier} />
+                        <p className='icon-caption'>Teamwork</p>
+                    </div>
+                </Tippy>
+                <Tippy theme = {"light"} content = {environmentText} animation = {"scale"} maxWdith = {300}>
+                    <div data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1800" className = 'center'>
+                        <img src = {environmentIcon} className='icon-size' style = {thirdTier}/>
+                        <p className='icon-caption'>Environment</p>
+                    </div>
+                </Tippy>
+                <Tippy theme = {"light"} content = {processText} animation = {"scale"} maxWdith = {300}>
+                    <div data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2300" className = 'right-lower'>
+                        <img src = {processIcon} className='icon-size' style = {secondTier} />
+                        <p className='icon-caption'>Process</p>
+                    </div>
+                </Tippy>
+                <Tippy theme = {"light"} content = {materialText} animation = {"scale"} maxWidth={300}>
+                    <div data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2800" className='right'>
                         <img src = {threadIcon} className='icon-size' />
-                    </Tippy>
-                    <p className='icon-caption'>Material</p>
-                </div>
-                <div className='left-lower' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1300">
-                    <Tippy theme = {"light"} content = {teamWorkText} animation = {"scale"} maxWidth = {300}>
-                        <img src = {teamworkIcon} className = 'icon-size' />
-                    </Tippy>
-                    <p className='icon-caption'>Team</p>
-                </div>
-                <div className='right-lower' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "2300">
-                    <Tippy theme = {"light"} content = {processText} animation = {"scale"} maxWidth = {300}>
-                        <img src = {processIcon} className = 'icon-size' />
-                    </Tippy>
-                    <p className='icon-caption'>Process</p>
-                </div>
-                <div className = 'center-icon' data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1800">
-                    <Tippy theme = {"light"} content = {environmentText} animation = {"scale"} maxWidth = {300}>
-                        <img src = {environmentIcon} className = 'icon-size' />
-                    </Tippy>
-                    <p className='icon-caption'>Environment</p>
-                </div>
+                        <p className='icon-caption'>Material</p>
+                    </div>
+                </Tippy>
+            </div>
         </div>
     );
 }
