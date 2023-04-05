@@ -55,7 +55,7 @@ function Home(){
     return(
         <div>
             <div className = 'home'>
-                <div data-aos = "fade-down" data-aos-duration = "2000">
+                <div data-aos = "fade-down" data-aos-duration = "1500">
                     <ReactCurvedText
                         width={width}
                         height={height}
@@ -73,7 +73,7 @@ function Home(){
                         svgProps={svgProps}
                         />          
                 </div>
-                <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "600" src = {dress} className='overlap-short-term garment-size'/>
+                <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "500" src = {dress} className='overlap-short-term garment-size'/>
             </div>
             <div className = 'icon-group'>
                 <Tippy theme = {"light"} content = {highFashionText} animation = {"scale"} maxWidth={300}>
@@ -82,11 +82,11 @@ function Home(){
                         <p className='icon-caption'>High Fashion</p>
                     </div>
                 </Tippy>
-                    <div data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1300" className = 'left-lower'  style = {secondTier}>
+                    <div data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1500" className = 'left-lower'  style = {secondTier}>
                         <Tippy theme = {"light"} content = {teamWorkText} animation = {"scale"} maxWidth={300}>
                             <img src = {teamworkIcon} className='icon-size' />
                         </Tippy>
-                        <p className='icon-caption'>Teamwork</p>
+                        <p className='icon-caption'>Collaboration</p>
                     </div>
                     <div data-aos = "fade-down" data-aos-duration = "1500" data-aos-delay = "1800" className = 'center' style = {thirdTier}>
                         <Tippy theme = {"light"} content = {environmentText} animation = {"scale"} maxWdith = {300}>
