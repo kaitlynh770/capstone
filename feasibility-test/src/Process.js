@@ -22,6 +22,8 @@ function Process(){
     let [fourthParagraph, showFourthParagraph] = useState(false);
     let [fifthParagraph, showFifthParagraph] = useState(false);
     let [sixthParagraph, showSixthParagraph] = useState(false);
+    let [seventhParagraph, showSeventhParagraph] = useState(false);
+    let [eighthParagraph, showEighthParagraph] = useState(false);
     let changeAlign = {
         alignSelf: "flex-end",
         justifyContent: "center",
@@ -38,10 +40,18 @@ function Process(){
     let furtherDownFifth = {
         top: "45%"
     }
+    let furtherDownSeventh = {
+        top: "72%"
+    }
     let changeAlignSixth = {
         alignSelf: "flex-end",
         justifyContent: "center",
         top: "57%"
+    }
+    let changeAlignEighth = {
+        alignSelf: "flex-end",
+        justifyContent: "center",
+        bottom: "5%"
     }
     let specializedHeight = {
         height: "8%"
@@ -49,10 +59,10 @@ function Process(){
     const onEnter = ({currentTarget}) => {
         let value = currentTarget.id;
         if(value%2 !=0){
-            gsap.to(currentTarget, {x:300});
+            gsap.to(currentTarget, {x:"20.833333333333332vw"});
         }
         else{
-            gsap.to(currentTarget, {x: -300});
+            gsap.to(currentTarget, {x: "-20.833333333333332vw"});
         }
         switch(value){
             case "1": 
@@ -73,6 +83,12 @@ function Process(){
             case "6":
                 showSixthParagraph(true);
                 break;
+            case "7":
+                showSeventhParagraph(true);
+                break;
+            case "8": 
+                showEighthParagraph(true);
+                break;
             
         }
     };
@@ -84,13 +100,15 @@ function Process(){
         showFourthParagraph(false);
         showFifthParagraph(false);
         showSixthParagraph(false);
+        showSeventhParagraph(false);
+        showEighthParagraph(false);
     };
     return(
         <div className = 'container'>
             <div className = 'process-page'>
-                <img className = 'header-pic' style = {specializedHeight}src = {headerPic} />
-                <h1 className = 'process-header'>Process</h1>
-                <div className = 'column'>
+                <img data-aos = "fade-down" data-aos-duration = "1000"  className = 'header-pic' style = {specializedHeight}src = {headerPic} />
+                <h1 data-aos = "fade-in" data-aos-duration = "1000" data-aos-delay = "1000" className = 'process-header'>Process</h1>
+                <div data-aos = "fade-up" data-aos-duration = "1000" data-aos-delay = "2000" className = 'column'>
                     <img id = "1" onMouseEnter = {onEnter} onMouseLeave = {onLeave} className='pic-adjustments' src = {strips} />
                     {firstParagraph && (
                     <div className = 'process-paragraph left-align'>
@@ -121,7 +139,7 @@ function Process(){
                         <div className = 'process-paragraph right-align' style = {changeAlignFourth}>
                             <h2 data-aos = "fade-in" data-aos-duration = "2000" data-aos-delay = "200" className='process-explanation-header'>Cloudification</h2>
                             <p data-aos = "fade-in" data-aos-duration = "2000" data-aos-delay = "800" >
-                                After carding, we're greeted with a soft and fluffy material. With a cloud-like structure and texture, it's a stark contrast with the tough and rigid plastic strips we cut at the start.
+                                After carding, we're greeted with a soft and fluffy material. With a cloud-like structure and texture, it's a stark contrast to the tough and rigid plastic strips we cut at the start.
                             </p>
                     </div>)}
                     <img id ="5" onMouseEnter = {onEnter} onMouseLeave = {onLeave} className = 'pic-adjustments' src = {spindle} />
@@ -138,11 +156,28 @@ function Process(){
                         <div className = 'process-paragraph right-align' style = {changeAlignSixth}>
                             <h2 data-aos = "fade-in" data-aos-duration = "2000" data-aos-delay = "200" className='process-explanation-header'>Patternification</h2>
                             <p data-aos = "fade-in" data-aos-duration = "2000" data-aos-delay = "800" >
-                                With our material ready to be woven, we could now plan out what shape our garment would take. Using our dress form and Muslin, we wanted create a garment that would embody the chic and clean look often seen in high-fashion. Using old sketches as a basis and with the rise of V-necks making a comeback on the runways, we wanted to incorporate that into our garmet to give a sleeker, more cosmopolitan edge that fits right into the world of high-fashion.
+                                With our material ready to be woven, we could now plan out what shape our garment would take. Using our dress form and Muslin, we wanted to create a garment that would embody the chic and clean look often seen in high-fashion. Using old sketches as a basis and with the rise of V-necks making a comeback on the runways, we incorporated it into our garmet to give a sleeker, more cosmopolitan edge that fits right into the world of high-fashion.
                             </p>
-                        </div>)}
-                    <img id = "7" onMouseEnter = {onEnter} onMouseLeave={onLeave} className = 'pic-adjustments' style = {specializedHeight} src = {loom} />   
+                        </div>
+                    )}
+                    <img id = "7" onMouseEnter = {onEnter} onMouseLeave={onLeave} className = 'pic-adjustments' style = {specializedHeight} src = {loom} /> 
+                    {seventhParagraph && (
+                        <div className = 'process-paragraph left-align' style = {furtherDownSeventh}>
+                            <h2 data-aos = "fade-in" data-aos-duration = "2000" data-aos-delay = "200" className='process-explanation-header'>Loomification</h2>
+                            <p data-aos = "fade-in" data-aos-duration = "2000" data-aos-delay = "200">
+                                Using a drop spindle, we attach the soft material from the previous step to the hook atop the spindle and frequently twist the spindle to get the material to form a long strand wrapped around the rod.
+                            </p>
+                        </div>
+                    )}  
                     <img id = "8" onMouseEnter = {onEnter} onMouseLeave={onLeave} className='pic-adjustments' src = {woven} />
+                    {eighthParagraph && (
+                        <div className = 'process-paragraph right-align' style = {changeAlignEighth}>
+                            <h2 data-aos = "fade-in" data-aos-duration = "2000" data-aos-delay = "200" className='process-explanation-header'>Patternification</h2>
+                            <p data-aos = "fade-in" data-aos-duration = "2000" data-aos-delay = "800" >
+                                With our material ready to be woven, we could now plan out what shape our garment would take. Using our dress form and Muslin, we wanted to create a garment that would embody the chic and clean look often seen in high-fashion. Using old sketches as a basis and with the rise of V-necks making a comeback on the runways, we incorporated it into our garmet to give a sleeker, more cosmopolitan edge that fits right into the world of high-fashion.
+                            </p>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

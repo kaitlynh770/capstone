@@ -9,11 +9,11 @@ import processIcon from './img/process-icon.png';
 import teamworkIcon from './img/teamwork-icon.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { gsap } from "gsap";
 import Tippy from '@tippyjs/react';
 import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
 import 'tippy.js/animations/scale.css';
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 function Home(){
     const highFashionText = "A chic garment that is not only stylish and sustainable but also a feat of engineering.";
     const teamWorkText = "With a passion for the environment and fashion, we strived to use each of our unique skill sets to create a garment never before seen.";
@@ -26,9 +26,9 @@ function Home(){
     const thirdTier = {
         marginTop: "4.5vw"
     }
-    const [width, setWidth] = useState(1000);
-    const [height, setHeight] = useState(551);
-    const [cx, setCx] = useState(550);
+    const [width, setWidth] = useState("69.44444444444444vw"); //used to be 1000
+    const [height, setHeight] = useState("38.263888888888886vw"); //used to be 551
+    const [cx, setCx] = useState(550);//used to be 550
     const [cy, setCy] = useState(300); //moves it down
     const [rx, setRx] = useState(320);
     const [ry, setRy] = useState(140); //changes how bent it is
@@ -49,14 +49,26 @@ function Home(){
     const svgProps = rotate
       ? { style: { transform: `rotate(${rotate}deg)` } }
       : null;
+    const [windowWidth, setWindowWidth] = useState(0);
+    const updateDimensions = () => {
+        const windowWidth = window.innerWidth
+        console.log(windowWidth);
+        setWindowWidth(windowWidth)
+    }
     useEffect(() => {
         AOS.init();
+        updateDimensions();
+        window.addEventListener("resize", updateDimensions);
+        return () => 
+          window.removeEventListener("resize",updateDimensions);
     }, [])
+    let canShowCurvedText = windowWidth > 1024;
     return(
         <div>
             <div className = 'home'>
                 <div data-aos = "fade-down" data-aos-duration = "1500">
-                    <ReactCurvedText
+                    {canShowCurvedText && (
+                        <ReactCurvedText
                         width={width}
                         height={height}
                         cx={cx}
@@ -71,9 +83,16 @@ function Home(){
                         tspanProps={tspanProps}
                         ellipseProps={ellipseProps}
                         svgProps={svgProps}
-                        />          
+                        />     
+                    )}
+                    {!canShowCurvedText && (
+                        <div>
+                            <h1 style = {{fontFamily: 'Recoleta Bold'}}>Plastifashion</h1>
+                            <img style = {{marginTop: '-20vw', marginBottom: '-20vw'}}className = 'garment-size' src = {dress} />
+                        </div>
+                    )}     
                 </div>
-                <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "500" src = {dress} className='overlap-short-term garment-size'/>
+                {canShowCurvedText && <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "500" src = {dress} className='overlap-short-term garment-size'/>}
             </div>
             <div className = 'icon-group'>
                 <Tippy theme = {"light"} content = {highFashionText} animation = {"scale"} maxWidth={300}>

@@ -96,6 +96,11 @@ h1{
     box-sizing: border-box;
     text-align: left;
 }
+.right-half{
+    margin: 4%;
+    width: 42%;
+    padding: 4%;
+}
 .column{
     display: flex;
     flex-direction: column;
@@ -126,11 +131,6 @@ h1{
     box-sizing: border-box;
     text-align: left;
     float: left;
-}
-.fashion-pic {
-    box-sizing:border-box;
-    text-align: center;
-    margin: auto;
 }
 .fashion-pic-left{
     margin:2%;
