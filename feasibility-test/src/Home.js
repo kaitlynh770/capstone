@@ -13,7 +13,6 @@ import Tippy from '@tippyjs/react';
 import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
 import 'tippy.js/animations/scale.css';
-import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 function Home(){
     const highFashionText = "A chic garment that is not only stylish and sustainable but also a feat of engineering.";
     const teamWorkText = "With a passion for the environment and fashion, we strived to use each of our unique skill sets to create a garment never before seen.";
