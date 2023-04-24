@@ -41,7 +41,7 @@ function Process(){
                         Using a Black Decker heat gun, we melt the strip onto a thick, hand held wire by spinning the wire around and applying heat on all sides. Using a drill with a U shaped wire insert, we dip one edge of the U wire into the fluid plastic and start to spin it quickly. This is a timely process, but it produces a beautiful and gleaming thread unlike any other.  
                     </AnimateSideBySideGif>
                     <AnimateSideBySideCarousel imgSrc1={thread} imgSrc2={lump} id = {3} step = "Threadification">
-
+                        Once the spinning process is over, we are greeted with beautiful and glossy strands that are a stark constrast to what it originally came from. Light yet durable, this thread is quite unlike any other material commonly seen.
                     </AnimateSideBySideCarousel>
                     <AnimateSideBySideGif imgSrc={cardOff} gifSrc={cardVideo} imgSrc2={brushes} id = {4} step = "Cardification">
                         Once gathering enough material, we started to card it to make the material. Using two brushes, we essentially brushed out our thread to transform our it into a light and airy material that can be spun.
