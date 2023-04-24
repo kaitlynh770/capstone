@@ -14,7 +14,7 @@ export default function AnimateSideBySide({
     const imageRef = useRef(null);
     const onEnter = useCallback(({currentTarget}) => {
         let value = currentTarget.id;
-        if(value%2 !=0){
+        if(value%2 !==0){
             gsap.to(imageRef.current, {x:"20.833333333333332vw", delay: 0.3, duration: 0.5});
             gsap.to(textRef.current, {x: "-20.833333333333332vw", delay: 0.3, duration: 0.5});
         }
@@ -38,7 +38,7 @@ export default function AnimateSideBySide({
     return(
         <div className = 'process-img-and-text' id = {id} onMouseEnter={onEnter} onMouseLeave={onLeave}>
             <img src={imgSrc} ref = {imageRef} className='pic-adjustments'/>
-            <div className={`process-paragraph${id%2!=0 ? ' left-align': ' right-align'}`}>
+            <div className={`process-paragraph${id%2!==0 ? ' left-align': ' right-align'}`}>
                 <div ref = {textRef}>
                     {showText && (
                     <div data-aos = "fade-in" data-aos-delay="700" data-aos-duration="2000">
@@ -53,3 +53,4 @@ export default function AnimateSideBySide({
         </div>
     );
 }
+//{id==2 ? 'pic-adjustments-special': 'pic-adjustments'}
