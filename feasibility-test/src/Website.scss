@@ -20,11 +20,11 @@ h1{
     font-family: 'Recoleta', cursive;
 }
 .garment-size{
-    width: 70%;
+    width: 20%;
 }
 .overlap-short-term{
     position: absolute;
-    bottom: -50%;
+    bottom: -8%;
 }
 .center-icon{
     // display: block;
@@ -107,7 +107,7 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     position: relative;
-    //justify-content: center;
+    margin: 1.5vw;
 }
 .center-process{
     margin: 2%;
@@ -150,10 +150,19 @@ h1{
 }
 .pic-adjustments{
     width: 30%;
+    height: 50%;
     margin-top: 1vw;
+    border: 2px solid #2d2d2d;
 }
 .pic-adjustments-story{
-    width: 70%;
+    height: 70%;
+}
+.pic-adjustments-special{
+    width: 30%;
+    height: 80%;
+    margin-top: 1vw;
+    background-image: url(./img/threadOff.jpeg);
+    border: 2px solid #2d2d2d;
 }
 .left-float-heading{
     font-family: 'Recoleta';
@@ -204,7 +213,7 @@ h1{
     font-size: 1.1vw;
     color: white;
     width: 50%;
-    margin-top: 4vw;
+    margin-top: 2vw;
 }
 
 .left-align{
