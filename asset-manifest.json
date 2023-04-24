@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/capstone/static/css/main.2c3c3c82.css",
-    "main.js": "/capstone/static/js/main.60cbbeba.js",
+    "main.css": "/capstone/static/css/main.812651c0.css",
+    "main.js": "/capstone/static/js/main.bca146ab.js",
     "static/js/787.2526f564.chunk.js": "/capstone/static/js/787.2526f564.chunk.js",
     "static/media/carding-video.gif": "/capstone/static/media/carding-video.8341c865c245ff227fc9.gif",
     "static/media/threadMaking.gif": "/capstone/static/media/threadMaking.05695b60c98c4dabc711.gif",
@@ -37,12 +37,12 @@
     "static/media/Recoleta-Black.ttf": "/capstone/static/media/Recoleta-Black.4cddb7fcdf4e1e13f708.ttf",
     "static/media/logo.svg": "/capstone/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/capstone/index.html",
-    "main.2c3c3c82.css.map": "/capstone/static/css/main.2c3c3c82.css.map",
-    "main.60cbbeba.js.map": "/capstone/static/js/main.60cbbeba.js.map",
+    "main.812651c0.css.map": "/capstone/static/css/main.812651c0.css.map",
+    "main.bca146ab.js.map": "/capstone/static/js/main.bca146ab.js.map",
     "787.2526f564.chunk.js.map": "/capstone/static/js/787.2526f564.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c3c3c82.css",
-    "static/js/main.60cbbeba.js"
+    "static/css/main.812651c0.css",
+    "static/js/main.bca146ab.js"
   ]
 }
