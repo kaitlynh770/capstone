@@ -24,12 +24,6 @@ export default function AnimateSideBySide({
         }
         setTextState(true);
     }, [textRef], [imageRef])
-
-    // const onLeave = () => {
-    //     gsap.to(imageRef.current, {x: 0, delay: 0.3, duration: 0.5});
-    //     gsap.to(textRef.current, {x:0, delay: 0.3, duration: 0.5 });
-    //     setTextState(false);
-    // }
     const onLeave = useCallback(() => {
         setTextState(false);
         gsap.to(imageRef.current, {x: 0, delay: 0.3, duration: 0.5});

@@ -49,7 +49,7 @@ function Reasons(){
         }
       };
     return(
-        <div className = 'container'>
+        <div>
             <div className = 'process-page'>
                 <img data-aos = "fade-in" data-aos-duration = "800" className = 'header-pic' src = {classyHeader} />
                 <div className = 'right-half-process' data-aos = "fade-left" dadta-aos-duration = "600" data-aos-delay ="600">
@@ -92,13 +92,13 @@ function Reasons(){
                             </Card>
                             </Stack>
                     </Carousel.Item> */}
-                <div className = 'right-half-process' data-aos-delay = "2000" data-aos = "fade-left">
+                <div className = 'right-half-process' data-aos-delay = "600" data-aos = "fade-left">
                     <h2 style = {boldFont}>Motivation</h2>
                     <p className = 'why-us-paragraph' style = {paddingTop}>
                         Plastifashion has always strived to do one thing: do the unpredictable. With our unique skillsets and knowledge, we strived to create something that is seldom seen in the fashion industry, a polished high fashion garment only made of recycled materials. We wanted to create something that would rock the fashion industry with new engineering techniques and shake the very core of what exactly 'high-fashion' is.
                     </p>
                 </div>
-                <div className = 'left-half-process' data-aos-delay = "2000" data-aos = "fade-right">
+                <div className = 'left-half-process' data-aos-delay = "600" data-aos = "fade-right">
                     <h2 style = {boldFont}>Goal</h2>
                     <p className = 'why-us-paragraph' style = {{paddingTop: '3vw'}}>
                         Plastic pollution is one of the most pressing environmental issues that is growing at a rapid rate to the point that it overwhelms our ability to deal with it. Although Plastifashion can't expect to solve plastic pollution entirely on its own, our goal for this project was to create a different outlet for recycling plastic with our current knowledge and abilities. There's too much plastic in the world, and we need to get creative with ways to redirect them into new products. 
