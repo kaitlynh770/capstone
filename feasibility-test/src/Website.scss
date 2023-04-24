@@ -170,11 +170,12 @@ h1{
     color: white;
 }
 .why-us-text{
-    font-family: 'Recoleta';
+    font-family: Recoleta Bold, cursive;
     font-size: 3.5vw;
     color: white;
     text-align: left;
     padding-left: 4vw;
+    padding-top: 8vw;
 }
 .why-us-wrapper{
     text-align: right;
@@ -195,6 +196,7 @@ h1{
 }
 .carousel-image{
     width: 80%;
+    height: 80%;
 }
 .carousel-control-next-icon, .carousel-control-prev-icon {
     display: inline-block;
