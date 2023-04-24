@@ -92,7 +92,7 @@ function Home(){
                         </div>
                     )}     
                 </div>
-                {canShowCurvedText && <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "500" src = {plastifashion} className='overlap-short-term garment-size'/>}
+                {canShowCurvedText && <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "500" src = {dress} className='overlap-short-term garment-size'/>}
             </div>
             <div className = 'icon-group'>
                 <Tippy theme = {"light"} content = {highFashionText} animation = {"scale"} maxWidth={300}>
