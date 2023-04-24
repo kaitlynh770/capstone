@@ -40,7 +40,7 @@ export default function AnimateSideBySideCarousel({
                 <div>
                     <img src = {imgSrc1} className='pic-adjustments'/>
                 </div>
-                <div>
+                <div style = {{display:'flex', justifyContent: 'center'}}>
                     <img src = {imgSrc2} className='pic-adjustments'/>
                 </div>
                 </Carousel>

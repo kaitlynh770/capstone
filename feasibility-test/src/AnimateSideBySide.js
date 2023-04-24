@@ -37,7 +37,7 @@ export default function AnimateSideBySide({
     }, [textRef], [imageRef]);
     return(
         <div className = 'process-img-and-text' id = {id} onMouseEnter={onEnter} onMouseLeave={onLeave}>
-            <img src={imgSrc} ref = {imageRef} className='pic-adjustments'/>
+            <img src={imgSrc} ref = {imageRef} style = {{border: '2px solid #2d2d2d'}}className='pic-adjustments'/>
             <div className={`process-paragraph${id%2!==0 ? ' left-align': ' right-align'}`}>
                 <div ref = {textRef}>
                     {showText && (

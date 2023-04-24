@@ -20,6 +20,8 @@ import lump from './img/lump.jpg'
 import brushes from './img/brushes.jpg'
 import wrapping from './img/wrapping.gif';
 import ball from './img/ball.jpg';
+import finalPic from './img/dress-angled.jpg';
+import sewing from './img/sewing.gif';
 import AnimateSideBySideGif from './AnimateSideBySideGif';
 import AnimateSideBySideCarousel from './AnimateSideBySideCarousel';
 
@@ -53,8 +55,11 @@ function Process(){
                         With our material ready to be woven, we could now plan out what shape our garment would take. Using our dress form and Muslin, we wanted to create a garment that would embody the chic and clean look often seen in high-fashion. Using old sketches as a basis and with the rise of V-necks making a comeback on the runways, we incorporated it into our garmet to give a sleeker, more cosmopolitan edge that fits right into the world of high-fashion.   
                     </AnimateSideBySide>
                     <AnimateSideBySideGif imgSrc = {loom} gifSrc = {loomOn} imgSrc2 ={wrapping} id = {7} step = "Loomification">
-                        Using a Cricket Loom, we incorporated our material into the weft of the textile and used a Tabby weave as our weaving stucture. 
+                        Using a Cricket Loom, we incorporated our material into the weft of the textile and used a Tabby weave as our weaving stucture. Incorporating our own plastic yarn and another recyled yarn, we continued to do this until we had a piece of fabric large enough to design a piece of clothing with.
                     </AnimateSideBySideGif>
+                    <AnimateSideBySide imgSrc = {finalPic} id = {8} step = "Fabrication">
+                        With the patterning we did in previous steps and using a combination of hand sewing and a sewing machine, we were able to produce this final piece. It's truly a feat of engineering that we were able to go from plastic bottles to a wearable piece. 
+                    </AnimateSideBySide>
                 </div>
             </div>
         </div>
