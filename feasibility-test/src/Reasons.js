@@ -6,6 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import c1 from './img/c1.png';
 import c2 from './img/c2.png';
 import c3 from './img/c3.png';
+import dressAngled from './img/dress-angled.jpg';
 import bottomHeader from './img/bottom-header.png';
 function Reasons(){
     let boldFont = {
@@ -19,12 +20,12 @@ function Reasons(){
             <div className = 'process-page'>
                 <img className = 'header-pic' src = {classyHeader} />
                 <div className = 'right-half-process'>
-                    <p className = 'why-us-paragraph' style = {paddingTop}>
-                        Korem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class aptent taciti sociosqu ad litora 
+                    <p className = 'why-us-paragraph'>
+                        With the reputation of fast fashion and the overwhelming amount of waste produced in today's fashion industry, Plastifashion aimed to transform some of this waste into something of value. Plastic is notorious for being an for being single-use and non-biodegradable. We challenged ourselves to turn plastic into something that is quite literally, the opposite of what it stands for. Breathing a second life into this harmful material, Plastifashion is an elegant garment primarily made of collected recyled plastic cups. Every part of the plastic is used, striving in accordance with zero waste principles.
                     </p>
                 </div>
                 <div className= 'left-half-process'>
-                    <h2 className = 'why-us-text'><span style = {boldFont}>WHY US?</span> <br></br><br></br> SP23 <br></br> COLLECTION</h2>
+                    <h2 className = 'why-us-text'><span style = {boldFont}>OUR STORY</span></h2>
                 </div>
                 <Carousel >
                     <Carousel.Item>
@@ -34,7 +35,7 @@ function Reasons(){
                         gap={3}
                         >
                             <Card style={{ width: "18rem", background: "black" }}>
-                                <img className='carousel-image' src = {c1} />
+                                <img className='carousel-image' src = {dressAngled} />
                             </Card>
                             <Card style={{ width: "18rem", background: "black" }}>
                                 <img className='carousel-image' src = {c2} />
