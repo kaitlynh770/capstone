@@ -1,6 +1,6 @@
 import './Website.scss';
 import React, { useState, useCallback, useRef } from "react";
-import headerPic from './img/tulips2.png';
+import headerPic from './img/tulips.png';
 import loom from './img/loom.jpg';
 import 'aos/dist/aos.css';
 import AnimateSideBySide from './AnimateSideBySide';
@@ -26,7 +26,7 @@ import AnimateSideBySideCarousel from './AnimateSideBySideCarousel';
 
 function Process(){
     let specializedHeight = {
-        height: "8%"
+        height: "10%"
     }
     return(
         <div className = 'container'>
@@ -52,7 +52,7 @@ function Process(){
                     <AnimateSideBySide imgSrc = {pattern} id = {6} step = "Patternification">
                         With our material ready to be woven, we could now plan out what shape our garment would take. Using our dress form and Muslin, we wanted to create a garment that would embody the chic and clean look often seen in high-fashion. Using old sketches as a basis and with the rise of V-necks making a comeback on the runways, we incorporated it into our garmet to give a sleeker, more cosmopolitan edge that fits right into the world of high-fashion.   
                     </AnimateSideBySide>
-                    <AnimateSideBySideGif imgSrc = {loom} gifSrc = {loomOn} imgSrc2 ={wrapping} id = {8} step = "Loomification">
+                    <AnimateSideBySideGif imgSrc = {loom} gifSrc = {loomOn} imgSrc2 ={wrapping} id = {7} step = "Loomification">
                         Using a Cricket Loom, we incorporated our material into the weft of the textile and used a Tabby weave as our weaving stucture. 
                     </AnimateSideBySideGif>
                 </div>
