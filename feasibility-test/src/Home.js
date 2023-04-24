@@ -13,6 +13,7 @@ import Tippy from '@tippyjs/react';
 import "tippy.js/dist/tippy.css";
 import "tippy.js/themes/light.css";
 import 'tippy.js/animations/scale.css';
+import plastifashion from './img/plastifashion.png';
 function Home(){
     const highFashionText = "A chic garment that is not only stylish and sustainable but also a feat of engineering.";
     const teamWorkText = "With a passion for the environment and fashion, we strived to use each of our unique skill sets to create a garment never before seen.";
@@ -91,7 +92,7 @@ function Home(){
                         </div>
                     )}     
                 </div>
-                {canShowCurvedText && <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "500" src = {dress} className='overlap-short-term garment-size'/>}
+                {canShowCurvedText && <img data-aos = "zoom-in" data-aos-duration = "1000" data-aos-delay = "500" src = {plastifashion} className='overlap-short-term garment-size'/>}
             </div>
             <div className = 'icon-group'>
                 <Tippy theme = {"light"} content = {highFashionText} animation = {"scale"} maxWidth={300}>
