@@ -1,0 +1,456 @@
+h1 {
+  color: white;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  max-width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.navbar-white navbar navbar-expand-lg navbar-light bg-light {
+  --bs-bg-opacity: 1;
+  background-color: #f5f5f5;
+}
+
+.white-text {
+  color: white;
+  font-family: 'Recoleta', cursive;
+}
+
+.garment-size {
+  width: 20%;
+}
+
+.overlap-short-term {
+  position: absolute;
+  bottom: -8%;
+}
+
+.center-icon {
+  margin-left: 4vw;
+  margin-right: 4vw;
+  margin-top: -50px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*changes the container into a flex box*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*wrap, nowrap, wrap-reverse*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /*row, row-reverse, column, column-reverse*/
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  /*flex-start, flex-end, center, stretch, space-between, space around*/
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  /*flex-end, center, stretch, baseline*/
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  right: 5%;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  left: 5%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.left-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.right-lower {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.icon-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.icons {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.icon-caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  font-family: 'Recoleta Bold', cursive;
+  font-size: 1vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.icon-size {
+  height: 6vw;
+}
+
+.left-half {
+  margin: 4%;
+  width: 42%;
+  padding: 4%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+
+.right-half {
+  width: 42%;
+  padding: 4%;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 1.5vw;
+}
+
+.center-process {
+  margin: 2%;
+  width: 46%;
+  padding: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+
+.right-half-process {
+  margin: 2%;
+  width: 46%;
+  padding: 3%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: right;
+  float: right;
+}
+
+.left-half-process {
+  margin: 2%;
+  width: 46%;
+  padding: 2%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+  float: left;
+}
+
+.fashion-pic-left {
+  margin: 2%;
+  width: 46%;
+  padding: 2%;
+  padding-right: 8vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  text-align: center;
+}
+
+.process-step {
+  display: inline-block;
+}
+
+.process-explanation-header {
+  font-family: Recoleta Bold, cursive;
+  font-size: 2.5vw;
+}
+
+.pic-adjustments {
+  width: 30%;
+  height: 50%;
+}
+
+.pic-adjustments-story {
+  width: 150%;
+  margin: auto;
+  height: 100%;
+}
+
+.pic-adjustments-special {
+  width: 30%;
+  height: 80%;
+  margin-top: 1vw;
+  background-image: url(./img/threadOff.jpeg);
+  border: 2px solid #2d2d2d;
+}
+
+.left-float-heading {
+  font-family: 'Recoleta';
+  font-size: 3.5vw;
+  color: white;
+}
+
+.why-us-text {
+  font-family: Recoleta Bold, cursive;
+  font-size: 3.5vw;
+  color: white;
+  text-align: left;
+  padding-left: 4vw;
+  padding-top: 8vw;
+}
+
+.why-us-wrapper {
+  text-align: right;
+  width: 50%;
+  padding-top: 2.5vw;
+  padding-right: 4vw;
+}
+
+.why-us-paragraph {
+  font-family: 'Basis Grotesque Arabic Pro Medium', cursive;
+  font-size: 1vw;
+  color: white;
+}
+
+.about-paragraph {
+  padding-top: 2vw;
+  font-family: 'Basis Grotesque Arabic Pro Medium', cursive;
+  font-size: 1.5vw;
+  color: white;
+}
+
+.carousel-image {
+  width: 80%;
+  height: 80%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  display: inline-block;
+  margin-top: 25vw;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+
+.process-paragraph {
+  position: absolute;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-family: 'Basis Grotesque Arabic Pro Medium', cursive;
+  font-size: 1.1vw;
+  color: white;
+  width: 50%;
+  margin-top: 2vw;
+}
+
+.left-align {
+  float: left;
+  text-align: left;
+}
+
+.right-align {
+  float: right;
+  text-align: right;
+}
+
+.process-page {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-pic {
+  width: 90%;
+  height: 15%;
+  padding-top: 1vw;
+  overflow-x: hidden;
+}
+
+.process-header {
+  font-family: 'Recoleta Bold', cursive;
+  color: white;
+  font-size: 5vw;
+  margin-top: -3vw;
+}
+
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: black;
+  text-decoration: none;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.menu-item {
+  font-family: 'Basis Grotesque Arabic Pro Medium', cursive;
+  font: 1.2em;
+  color: black;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2d2d2d;
+  overflow-x: hidden;
+  color: #f5f5f5;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Basis Grotesque Arabic Pro Medium', cursive;
+}
+
+.top-bar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 30px;
+  font-size: 32px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: 'Basis Grotesque Arabic Pro Medium', cursive;
+  color: black;
+}
+
+.top-bar .logo .svg {
+  margin-top: 0px;
+}
+
+.top-bar .nav-bar-item-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 10px;
+  color: #dfdbdb;
+}
+
+.top-bar .nav-bar-item-active:hover {
+  color: #fffcfc;
+}
+
+.top-bar .nav-bar-item-inactive {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  font-size: 18px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #dfdbdb;
+  margin: 10px;
+}
+
+.top-bar .nav-bar-item-inactive:hover {
+  color: white;
+}
+
+.process-img-and-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1vw;
+}
+
+.carousel.carousel-slider {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border: 2px solid #2d2d2d;
+}
+/*# sourceMappingURL=Website.css.map */
